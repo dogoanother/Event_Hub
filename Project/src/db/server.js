@@ -4,7 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 //const PORT = 3000;
 
 // Conectar (ou criar) banco SQLite
-const db = new sqlite3.Database('./meubanco.db', (err) => {
+const db = new sqlite3.Database('./src/db/meubanco.db', (err) => {
   if (err) {
     console.error('Erro ao conectar ao banco:', err.message);
   } else {
